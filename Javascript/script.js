@@ -14,7 +14,7 @@ const breed = async () => {
     info3.style.display = 'none';
 
     // Setting up the URL using CORS
-    const name = document.querySelector("#dogname").value;
+    const name = document.querySelector(".dogname").value;
     const url = `https://api.api-ninjas.com/v1/dogs?name=${name}`
     const character = await fetch(url, {
         method: 'GET',
@@ -38,7 +38,7 @@ const breed = async () => {
     // If data founds from API
     const img = point[0].image_link;
     document.querySelector(".sec4").innerHTML = `
-    <img src = ${img}>`;
+    <img src = ${img} class = img-fluid >`;
     document.querySelector(".sec5").innerHTML = ` 
     ${point[0].name}`; 
 
@@ -47,8 +47,8 @@ const breed = async () => {
     //Showing the more details of the dog 
     function moredetail() {
         const info = document.querySelector('.details');
-        info.innerHTML = `<p>Min life Expectancy:${point[0].min_life_expectancy}</p>
-        <p>Max life Expectancy:${point[0].max_life_expectancy}</p>`;
+        info.innerHTML = `<p>Min life Expectancy: ${point[0].min_life_expectancy}</p>
+        <p>Max life Expectancy: ${point[0].max_life_expectancy}</p>`;
     }
     document.querySelector('.detailbutton').addEventListener("click", moredetail);
       
@@ -58,7 +58,7 @@ document.querySelector(".clickable").addEventListener("click", breed);
 
 
 // Calling a function using "Enter" keyword
-document.querySelector("#dogname").addEventListener("keypress", (keyword)=>{
+document.querySelector(".dogname").addEventListener("keypress", (keyword)=>{
     if(keyword.key === "Enter"){
         breed();
     }

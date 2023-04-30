@@ -1,75 +1,16 @@
-#sec1 {
-    /* background-color: red; */
-    font-size: 48px;
-    margin-top: 30px;
-    width: 40%;
-    position: relative;
-    left: 32%;
-
-}
-
-#sec2 {
-    /* background-color: blue; */
-    font-size: 24px;
-    width: 25%;
-    position: relative;
-    left: 40%;
-    margin-top: 10px;
-}
-
-#sec3 {
-    position: relative;
-    left: 40%;
-    width: 40%;
-    margin-top: 20px;
-}
-
-#dogname {
-    height: 30px;
-    width: 40%;
+.dogname {
     font-size: 18px;
 }
 
 .bi {
     margin-left: 8px;
     font-size: 18px;
-    border: 2px;
 }
 
-.sec4{
-    font-size: 25px;
-}
-
-#cartoon{
-    
-    text-align: center;
-
-}
-
-.sec5{
-    /* background-color: red; */
-    font-size: 25px;
-}
-
-.sec6{
+.sec6 {
     display: none;
 }
 
-.details{
-    /* background-color: red; */
-    font-size: 18px;
+.details {
+    font-size: 19px;
 }
-/* *{
-    margin: 0px;
-    padding: 0px;
-    text-decoration: none;
-}
-
-
-.body{
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    gap: 21px;
-} */
